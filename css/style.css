@@ -1,0 +1,164 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.hidden {
+     display: none;
+}
+
+body {
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: center;
+     font-family: 'Poppins', sans-serif;
+     margin: 0 50px 0 50px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+     margin-top: 10px;
+}
+
+footer {
+
+}
+
+.title-area {
+     text-align: center;
+}
+.about-area {
+     margin-top: 100px;
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: center;
+}
+.about-area a {
+     font-weight: bold;
+     text-decoration: underline;
+}
+.about-area div {
+     margin-top: -3px;
+     text-align: center;
+     border: 1px solid rgb(34, 34, 36);
+     width: 80%;
+     max-width: 650px;
+     padding: 25px;
+}
+
+.settings-section { /* FIX THIS!!! */
+     /* width: 40%;
+     max-width: 600px; */
+}
+.settings-section p {
+     text-align: left;
+}
+
+
+section.timer-and-instructions-area {
+     display: flex;
+     flex-flow: column wrap;
+     align-items: center;
+     /* border: 1px solid red; */
+}
+h2#instructionDisplayArea {
+     font-size: 36px;
+     margin-bottom: 12px;
+}
+section.timer-divs {
+     display: flex;
+     flex-flow: column nowrap;
+     /* border: 1px solid black; */
+}
+div.timer-display-area {
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     column-gap: 5px;
+     color: rgb(98, 98, 121);
+}
+div.timer-display-area:nth-child(1) {
+     color: black;
+     font-size: 24px;
+}
+div.timer-display-area p {
+     margin: 1px 5px;
+     text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+     display: none;
+}
+
+#urgent {
+     font-weight: 900;
+}
+
+/* Light Mode */
+.light-mode {
+     background-color: rgb(164, 167, 182);
+     color: rgb(34, 34, 36);
+}
+.light-mode a:visited {
+     color: inherit;
+}
+.light-mode a:link {
+     color: rgb(34, 34, 36);
+}
+.light-mode a:hover {
+     color: rgb(98, 98, 121);
+     text-decoration: underline;
+}
+
+
+/* Dark Mode */
+.dark-mode {
+     background-color: rgb(34, 34, 36);
+     color: rgb(164, 167, 182);
+}
+.dark-mode a:visited {
+     color: inherit;
+}
+.dark-mode a:link,
+.dark-mode .timer-divs div:first-child {
+     color: rgb(164, 167, 182);
+}
+.dark-mode a:hover {
+     color: rgb(98, 98, 121);
+     text-decoration: underline;
+}
+.dark-mode .about-text,
+.dark-mode .settings-section {
+     border: 1px solid rgb(164, 167, 182);
+}
+
+.light-mode a,
+.dark-mode a {
+     text-decoration: none;
+}

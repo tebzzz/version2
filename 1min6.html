@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>1 minute, 6 breaths</title>
+
+	<!-- external CSS link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="light-mode">
+	<header>
+		<a href="index.html">home</a>
+	</header>
+
+	<section class="title-area">
+		<h5>1 Minute, 6 Breaths</h5>
+		<h6>In 5 seconds, out 5 seconds.</h6>
+		<h1>breathe.</h1>
+		<p></p>
+		<textarea>
+			Textbox
+		</textarea>
+		<p></p>
+		<img src="b.png" alt="Breath">
+	</section>
+
+	<section class="button-area">
+		<button id="beginButton">begin.</button>
+		<button id="restartButton" class="hidden">restart.</button>
+	</section>
+
+	<section class="timer-and-instructions-area">
+		<h2 id="instructionDisplayArea">...</h2>
+		<section class="timer-divs">
+			<div class="timer-display-area">
+				<p id="breath1CountArea">_</p>
+				<p id="breath2CountArea">_</p>
+				<p id="breath3CountArea">_</p>
+				<p id="breath4CountArea">_</p>
+				<p id="breath5CountArea">_</p>
+				<p id="breath6CountArea">_</p>
+			</div>
+		</section>
+	</section>
+
+	<section class="about-area">
+		<p><span><a href="#" id="aboutButton">about</a></span><span> | </span><span><a href="#" id="settingsButton">settings</a></span></p>
+		
+		<div class="about-text hidden">
+			<p id="urgent"><a href="https://988lifeline.org/chat/">If you are experiencing a crisis and need help now, please click here to visit the 988 Suicide & Crisis Lifeline. You can chat to a counselor online or dial 988 for help.</a></p>
+			<p>this lightweight website is designed to aid myself & others focus on breathing when things are starting to feel overwhelming.</p>
+			<p>I've found each of these exercises to be extremely beneficial in helping to bring me back to planet earth.</p>
+			<p>you can click the settings button to enable dark-mode if you want, and if you're on a browser that supports it, you can choose between a masculine/feminine voice to read you the breathing instructions in real-time.</p>
+			<p>the breathing exercises here are borrowed from <a href="https://drchatterjee.com/5-breathing-techniques-help-reduce-stress/">Dr. Rangan Chatterjee</a>.</p>
+			<p>website &copy;<a href="https://github.com/kiefer-dev">Kiefer Weis</a> 2022</p>
+		</div>
+
+		
+		<div class="settings-section hidden">
+			<p>dark mode: <input type="checkbox" id="darkModeCheckbox"></p>
+			<section class="speech-setting">
+				<p>speech mode (masc): <input type="checkbox" id="speechModeCheckboxMasc"></p>
+				<p>speech mode (fem): <input type="checkbox" id="speechModeCheckboxFem"></p>
+			</section>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/1min6.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
